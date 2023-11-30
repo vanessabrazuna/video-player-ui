@@ -7,7 +7,8 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Technologies Used
+
+## Technologies Used
 
 The project was developed using the following technologies
 
@@ -16,10 +17,11 @@ The project was developed using the following technologies
 - [Tailwindcss](https://tailwindcss.com)
 - [React Redux](https://react-redux.js.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide React](https://lucide.dev/guide/packages/lucide-react)
 - [React PLayer](https://www.npmjs.com/package/react-player/v/1.5.0)
+- [Tailwind Scrollbar](https://www.npmjs.com/package/tailwind-scrollbar)
 - []()
+
 
 ## Expanding the ESLint configuration
 
