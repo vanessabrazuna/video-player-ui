@@ -13,13 +13,14 @@ Currently, two official plugins are available:
 The project was developed using the following technologies
 
 - [ReactJS](https://legacy.reactjs.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwindcss](https://tailwindcss.com)
 - [React Redux](https://react-redux.js.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Lucide React](https://lucide.dev/guide/packages/lucide-react)
 - [React PLayer](https://www.npmjs.com/package/react-player/v/1.5.0)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwindcss](https://tailwindcss.com)
 - [Tailwind Scrollbar](https://www.npmjs.com/package/tailwind-scrollbar)
+- [Radix Collapsible](https://www.radix-ui.com/primitives/docs/components/collapsible)
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react)
 - []()
 
 
