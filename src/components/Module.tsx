@@ -14,10 +14,10 @@ interface ModuleProps {
 export function Module({ title, amountOfLessons, moduleIndex }: ModuleProps) {
   const dispatch = useDispatch()
 
-  const { currentModuleIndex, currentLessonindex } = useAppSelector(state => {
-    const { currentModuleIndex, currentLessonindex } = state.player
+  const { currentModuleIndex, currentLessonIndex } = useAppSelector(state => {
+    const { currentModuleIndex, currentLessonIndex } = state.player
 
-    return { currentModuleIndex, currentLessonindex }
+    return { currentModuleIndex, currentLessonIndex }
   })
 
   const lessons = useAppSelector((state) => {
@@ -43,7 +43,7 @@ export function Module({ title, amountOfLessons, moduleIndex }: ModuleProps) {
         <nav className="relative flex flex-col gap-4 p-6">
           {lessons.map((lesson, lessonIndex) => {
             const isCurrent = currentModuleIndex === moduleIndex && 
-              currentLessonindex === lessonIndex
+              currentLessonIndex === lessonIndex
 
             return (
               <Lesson
