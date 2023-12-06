@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 
 const playerSlice = createSlice({
   name: 'player',
@@ -9,7 +9,7 @@ const playerSlice = createSlice({
           id: '1',
           title: 'Iniciando com React',
           lessons: [
-            { id: '7A4UQGrFU9Q', title: 'CSS Modules', duration: '13:45' },
+            { id: 'Jai8w6K_GnY', title: 'CSS Modules', duration: '13:45' },
             { id: 'w-DW4DhDfcw', title: 'Estilização do Post', duration: '10:05' },
             { id: 'D83-55LUdKE', title: 'Componente: Header', duration: '06:33' },
             { id: 'W_ATsETujaY', title: 'Componente: Sidebar', duration: '09:12' },
@@ -23,7 +23,7 @@ const playerSlice = createSlice({
           lessons: [
             { id: 'gE48FQXRZ_o', title: 'Componente: Comment', duration: '13:45' },
             { id: 'Ng_Vk4tBl0g', title: 'Responsividade', duration: '10:05' },
-            { id: '7A4UQGrFU9Q', title: 'Interações no JSX', duration: '06:33' },
+            { id: 'h5JA3wfuW1k', title: 'Interações no JSX', duration: '06:33' },
             { id: '1G0vSTqWELg', title: 'Utilizando estado', duration: '09:12' },
           ],
         },
@@ -31,17 +31,19 @@ const playerSlice = createSlice({
           id: '3',
           title: 'Desvendando o Redux',
           lessons: [
-            { id: 'u99tNt3TZf8', title: 'Componente: Comment', duration: '13:45' },
-            { id: 'Ng_Vk4tBl0g', title: 'Responsividade', duration: '10:05' },
-            { id: 'h5JA3wfuW1k', title: 'Interações no JSX', duration: '06:33' },
-            { id: '1G0vSTqWELg', title: 'Utilizando estado', duration: '09:12' },
+            { id: 'Jai8w6K_GnY', title: 'CSS Modules', duration: '13:45' },
+            { id: 'w-DW4DhDfcw', title: 'Estilização do Post', duration: '10:05' },
+            { id: 'D83-55LUdKE', title: 'Componente: Header', duration: '06:33' },
+            { id: 'W_ATsETujaY', title: 'Componente: Sidebar', duration: '09:12' },
+            { id: 'Pj8dPeameYo', title: 'CSS Global', duration: '03:23' },
+            { id: '8KBq2vhwbac', title: 'Form de comentários', duration: '11:34' },
           ],
         },
         {
           id: '4',
           title: 'Conhecendo o Zustand',
           lessons: [
-            { id: 'kCpca2z2cls', title: 'Componente: Comment', duration: '13:45' },
+            { id: 'gE48FQXRZ_o', title: 'Componente: Comment', duration: '13:45' },
             { id: 'Ng_Vk4tBl0g', title: 'Responsividade', duration: '10:05' },
             { id: 'h5JA3wfuW1k', title: 'Interações no JSX', duration: '06:33' },
             { id: '1G0vSTqWELg', title: 'Utilizando estado', duration: '09:12' },
@@ -53,12 +55,29 @@ const playerSlice = createSlice({
     currentLessonindex: 0,
   },
   reducers: {
-    play: (state, action) => {
+    play: (state, action: PayloadAction<[number, number]>) => {
       state.currentModuleIndex = action.payload[0]
       state.currentLessonindex = action.payload[1]
-    }
+    },
+
+    next: (state) => {
+      const nextLessonIndex = state.currentLessonindex + 1
+      const nextLesson = state.course.modules[state.currentModuleIndex].lessons[nextLessonIndex]
+
+      if (nextLesson) {
+        state.currentLessonindex = nextLessonIndex
+      } else {
+        const nextModuleIndex = state.currentModuleIndex + 1
+        const nextModule = state.course.modules[nextModuleIndex]
+
+        if (nextModule) {
+          state.currentModuleIndex = nextModuleIndex
+          state.currentLessonindex = 0
+        }
+      }
+    },
   },
 })
 
 export const player = playerSlice.reducer
-export const { play } = playerSlice.actions
+export const { play, next } = playerSlice.actions
