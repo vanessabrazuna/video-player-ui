@@ -24,7 +24,7 @@ The project was developed using the following technologies
 - [Json Server](https://github.com/typicode/json-server)
 - [Axios](https://axios-http.com/)
 - [Vitest](https://vitest.dev/)
-- []()
+- [Zustand](https://github.com/pmndrs/zustand)
 
 
 ## Expanding the ESLint configuration
