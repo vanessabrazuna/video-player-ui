@@ -21,6 +21,8 @@ The project was developed using the following technologies
 - [Tailwind Scrollbar](https://www.npmjs.com/package/tailwind-scrollbar)
 - [Radix Collapsible](https://www.radix-ui.com/primitives/docs/components/collapsible)
 - [Lucide React](https://lucide.dev/guide/packages/lucide-react)
+- [Json Server](https://github.com/typicode/json-server)
+- [Axios](https://axios-http.com/)
 - [Vitest](https://vitest.dev/)
 - []()
 
