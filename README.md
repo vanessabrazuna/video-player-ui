@@ -1,11 +1,10 @@
-# React + TypeScript + Vite
+<h1 align="center">
+    Video Player UI
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img alt="Video Player UI" src="https://github-production-user-asset-6210df.s3.amazonaws.com/73675022/288928123-baec1f00-7e43-429c-bba4-2686c6384899.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231208%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231208T003014Z&X-Amz-Expires=300&X-Amz-Signature=1bc21a2676c8006a1aeab0765b9575e85183fc8b831faa713c5af3dc359d08df&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0" width="100%">
+</p>
 
 
 ## Technologies Used
