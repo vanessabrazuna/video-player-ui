@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="Video Player UI" src="https://github-production-user-asset-6210df.s3.amazonaws.com/73675022/288928123-baec1f00-7e43-429c-bba4-2686c6384899.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231208%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231208T003014Z&X-Amz-Expires=300&X-Amz-Signature=1bc21a2676c8006a1aeab0765b9575e85183fc8b831faa713c5af3dc359d08df&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0" width="100%">
+  <img alt="Video Player UI" src="https://github.com/community/community/assets/73675022/de3c6f60-48d0-481b-be3c-dcd6ca6fb8b3" width="100%">
 </p>
 
 
